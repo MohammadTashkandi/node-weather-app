@@ -1,5 +1,3 @@
-console.log('Javascript file')
-
 const fetchForecast = (address) => {
     fetch(`http://localhost:5000/weather?address=${address}`)
         .then((res) => {
