@@ -1,5 +1,5 @@
 const fetchForecast = (address) => {
-    fetch(`http://localhost:5000/weather?address=${address}`)
+    fetch(`/weather?address=${address}`)
         .then((res) => {
             res.json().then((data) => {
                 if (data.error) {
