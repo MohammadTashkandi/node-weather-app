@@ -10,7 +10,7 @@ const forecast = (lon, lat, callback) => {
             console.log(res.body.error)
             callback('Please provide valid info', undefined)
         } else {
-            callback(undefined, `${res.body.current.weather_descriptions[0]}. It is currently ${res.body.current.temperature}, it feels like ${res.body.current.feelslike}. The humidity is ${res.body.current.humidity}`)
+            callback(undefined, `${res.body.current.weather_descriptions[0]}. It is currently ${res.body.current.temperature}, it feels like ${res.body.current.feelslike}. The humidity is ${res.body.current.humidity}%`)
         }
     })
 }
